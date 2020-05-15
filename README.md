@@ -1,6 +1,6 @@
 Annotations of the cough events in the AMI corpus (http://groups.inf.ed.ac.uk/ami/corpus/).
 
-Paper related tothis work can be found at https://ieeexplore.ieee.org/document/8904929
+Paper related to this work can be found at https://ieeexplore.ieee.org/document/8904929
 
 Please use the following citation if reusing this work:
 
