@@ -8,6 +8,7 @@ P. Leamy, D. Berry, T. Burke and D. Dorran, "Re-annotation of cough events in th
 
 @INPROCEEDINGS{8904929, author={P. {Leamy} and D. {Berry} and T. {Burke} and D. {Dorran}}, booktitle={2019 30th Irish Signals and Systems Conference (ISSC)}, title={Re-annotation of cough events in the AMI corpus}, year={2019}, volume={}, number={}, pages={1-5},}
 
-CoughAnnotations.zip contain MAT-files containing start times, end times, speaker id of cough events. Each MAT-file corresponds to a single meeting. The filename for a MAT-file is in the form of the <meetingid>.mat, http://groups.inf.ed.ac.uk/ami/corpus/meetingids.shtml 
+Events originally lablled as coughs in the AMI Corpus annotations have been extracted from the original recordings and are enclosed in the 2 ZIP files here, ```events_array.zip``` contains the array microphone recordings, and ```events_headsets.zip``` contains the headset mix recordings.
 
-File named "coughs.zip" contains 482 WAV files of individual coughs taken from the AMI corpus.
+```Annotations.csv``` contains descriptions of each these events, and ```listwning_tool.html``` can be used to playback array amd headset recordings simultaneously once the recordings have been unzipped.
+

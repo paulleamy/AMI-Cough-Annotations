@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+    <TITLE> Audio annotation tool</TITLE>
+    <link rel="stylesheet" href="style.css">
+</HEAD>
+
+    <BODY>
+        <script>
+         
+        </script>
+        
+       <!-- Example 1 --> 
+        <div id="example1">
+            <H1 id="header1">Example 1</H1>
+            
+            Room
+            <audio id="audio1" controls> 
+                <source src="events_array/1.wav" type="audio/mpeg"> 
+            </audio>
+           Head
+            <audio id="audio2" controls> 
+                <source src="events_headset/1.wav" type="audio/mpeg"> 
+            </audio>
+        </div>
+
+            <br><br>
+            
+            <button onclick="eventJump()"> Jump to... </button>
+            <input type="text" id="myText" value="">
+            
+            <br><br>
+            
+            <button id="next" class="buttonsmall" onclick="prev()" type="button">Prev</button>
+            <!-- <button id="play" class="buttonsmall" onclick="playAudio()" type="button">Play</button> -->
+            <button id="next" class="buttonsmall" onclick="next()" type="button">Next</button>
+            
+            
+
+        <script type="text/javascript">
+
+            function eventJump() {
+                var x = document.getElementById("myText").value;
+                document.getElementById("demo").innerHTML = x;
+            }
+
+            var player1 = document.getElementById('audio1');
+            player1.preload = "auto";
+            player1.volume = 1;
+            
+            var player2 = document.getElementById('audio2');
+            player2.preload = "auto";
+            player2.volume = 1;
+
+            var num = 1;
+            var srcfile;
+
+           
+            // function playAudio() {
+                
+                
+            //     player1.loop = false;
+            //     player1.play();
+                
+            //     player2.loop = false;
+            //     player2.play();
+            
+            //     document.getElementById("play").style.backgroundColor = "rgb(158, 182, 185)";
+
+            // }
+
+            function next() {
+                
+                // Increase num variable by 1
+                num++;
+
+                // Edit source file
+                document.getElementById("audio1").setAttribute('src', "events_array/"+num+".wav");
+
+                document.getElementById("audio2").setAttribute('src', "events_headset/"+num+".wav");
+                
+                // Edit background colour
+                // document.getElementById("play").style.backgroundColor = "lightgray";
+
+                // Edit title
+                document.getElementById("header1").innerHTML = num;
+
+            }
+
+            function prev() {
+
+                // Increase num variable by 1
+                num--;
+                if (num < 1) {num = 1}
+
+                // Edit source file
+                document.getElementById("audio1").setAttribute('src', "events_array/"+num+".wav");
+                document.getElementById("audio2").setAttribute('src', "events_headset/"+num+".wav");
+                
+                // document.getElementById("play").style.backgroundColor = "lightgray";
+
+                // Edit title
+                document.getElementById("header1").innerHTML = num;
+
+            }
+
+            function eventJump() {
+                
+                var x = document.getElementById("myText").value;
+                num = x;
+
+                // Edit source file
+                document.getElementById("audio1").setAttribute('src', "events_array/"+num+".wav");
+                document.getElementById("audio2").setAttribute('src', "events_headset/"+num+".wav");
+
+                // Edit title
+                document.getElementById("header1").innerHTML = num;
+            }
+
+            
+          
+          </script>
+
+    </BODY>
+
+</HTML>
