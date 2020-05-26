@@ -10,5 +10,5 @@ P. Leamy, D. Berry, T. Burke and D. Dorran, "Re-annotation of cough events in th
 
 Events originally lablled as coughs in the AMI Corpus annotations have been extracted from the original recordings and are enclosed in the 2 ZIP files here, ```events_array.zip``` contains the array microphone recordings, and ```events_headsets.zip``` contains the headset mix recordings.
 
-```Annotations.csv``` contains descriptions of each these events, and ```listwning_tool.html``` can be used to playback array amd headset recordings simultaneously once the recordings have been unzipped.
+```Annotations.csv``` contains descriptions of each these events, and ```listening_tool.html``` can be used to playback array amd headset recordings simultaneously once the recordings have been unzipped.
 
