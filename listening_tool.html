@@ -16,24 +16,27 @@
             
             Room
             <audio id="audio1" controls> 
-                <source src="events_array/1.wav" type="audio/mpeg"> 
+                <source src="preview_array/1.wav" type="audio/mpeg"> 
             </audio>
-           Head
+
+            <br>
+
+            Head
             <audio id="audio2" controls> 
-                <source src="events_headset/1.wav" type="audio/mpeg"> 
+                <source src="preview_headset/1.wav" type="audio/mpeg"> 
             </audio>
         </div>
 
             <br><br>
             
-            <button onclick="eventJump()"> Jump to... </button>
+            <button onclick="eventJump()" style="width:100px;height:60px;"> Jump to... </button>
             <input type="text" id="myText" value="">
             
             <br><br>
             
-            <button id="next" class="buttonsmall" onclick="prev()" type="button">Prev</button>
+            <button id="next" class="buttonsmall" onclick="prev()" type="button" style="width:100px;height:60px;">Prev</button>
             <!-- <button id="play" class="buttonsmall" onclick="playAudio()" type="button">Play</button> -->
-            <button id="next" class="buttonsmall" onclick="next()" type="button">Next</button>
+            <button id="next" class="buttonsmall" onclick="next()" type="button" style="width:100px;height:60px;">Next</button>
             
             
 
@@ -75,9 +78,9 @@
                 num++;
 
                 // Edit source file
-                document.getElementById("audio1").setAttribute('src', "events_array/"+num+".wav");
+                document.getElementById("audio1").setAttribute('src', "preview_array/"+num+".wav");
 
-                document.getElementById("audio2").setAttribute('src', "events_headset/"+num+".wav");
+                document.getElementById("audio2").setAttribute('src', "preview_headset/"+num+".wav");
                 
                 // Edit background colour
                 // document.getElementById("play").style.backgroundColor = "lightgray";
@@ -94,8 +97,8 @@
                 if (num < 1) {num = 1}
 
                 // Edit source file
-                document.getElementById("audio1").setAttribute('src', "events_array/"+num+".wav");
-                document.getElementById("audio2").setAttribute('src', "events_headset/"+num+".wav");
+                document.getElementById("audio1").setAttribute('src', "preview_array/"+num+".wav");
+                document.getElementById("audio2").setAttribute('src', "preview_headset/"+num+".wav");
                 
                 // document.getElementById("play").style.backgroundColor = "lightgray";
 
@@ -110,8 +113,8 @@
                 num = x;
 
                 // Edit source file
-                document.getElementById("audio1").setAttribute('src', "events_array/"+num+".wav");
-                document.getElementById("audio2").setAttribute('src', "events_headset/"+num+".wav");
+                document.getElementById("audio1").setAttribute('src', "preview_array/"+num+".wav");
+                document.getElementById("audio2").setAttribute('src', "preview_headset/"+num+".wav");
 
                 // Edit title
                 document.getElementById("header1").innerHTML = num;
