@@ -8,6 +8,8 @@ P. Leamy, D. Berry, T. Burke and D. Dorran, "Re-annotation of cough events in th
 
 @INPROCEEDINGS{8904929, author={P. {Leamy} and D. {Berry} and T. {Burke} and D. {Dorran}}, booktitle={2019 30th Irish Signals and Systems Conference (ISSC)}, title={Re-annotation of cough events in the AMI corpus}, year={2019}, volume={}, number={}, pages={1-5},}
 
+A playback tool is also included, ```listening_tool.html```, which can be used to playback array and headset recordings once the recordings have been unzipped.
+
 Four sets of recordinga are provided here in indiviudal ZIP files:
 * ```events_array.zip``` contains table-top array microphone recordings of each event
 * ```preview_array.zip``` contains the same table-top array microphone recordings of each event but with aa larger window for more context when previewing sounds
@@ -18,10 +20,24 @@ Four sets of recordinga are provided here in indiviudal ZIP files:
 ```Annotations_master.csv``` contains descriptions of each these events with the following headings
 * File number: corresponds to the WAV filename	
 * Meeting ID: ID used to identify the meeting recording form the AMI corpus	
-* Microphone: Not needed	Speaker ID	Start	End	Cough	Volume	Type	Background	B. Type	B. Volume	Close call	Comments
+* Microphone: Not required	
+* Speaker ID: ID used to identify speaker from meeting	
+* Start: Start time of event in seconds
+* End: End time of event in seconds	
+* Cough: 1 - cough, 0 - non-cough	
+* Volume: Relative volume of cough in recording	
+* Type: Type of sound
+  * For cough events provides a description of the cough type i.e. dry, moist, hacking, etc.
+  * For non-cough events gives a description of the event i.e. throat clear, laugh, etc.
+* Background: 1 - background noise overlapping, 0 - non background noise overlapping	
+* B. Type: Type of background noise if present	
+* B. Volume: Relative volume of background noise	
+* Close call: Events that may warrant an additional opinion on the decided values	
+* Comments: Addtional comments included here
+  * One comment to be aware of is "close to lasrt sound" or "close" which indicates that the previous event is in close proximity to the event with this comment suggesting that these events maybe part of a larger event, for example a volley of coughs or thoat clears.
 
 
 
 
-and ```listening_tool.html``` can be used to playback array and headset recordings once the recordings have been unzipped.
+
 
