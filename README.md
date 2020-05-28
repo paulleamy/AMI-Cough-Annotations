@@ -14,7 +14,7 @@ Four sets of recordinga are provided here in indiviudal ZIP files:
 * ```events_array.zip``` contains table-top array microphone recordings of each event
 * ```preview_array.zip``` contains the same table-top array microphone recordings of each event but with aa larger window for more context when previewing sounds
 * ```events_headset.zip``` contains the headset mix recordings from each meetin participant
-* ```preview_array.zip``` contains the same headset mix recordings of each event but with a larger window for more context when previewing sounds
+* ```preview_headset.zip``` contains the same headset mix recordings of each event but with a larger window for more context when previewing sounds
 
 
 ```Annotations_master.csv``` contains descriptions of each these events with the following headings
