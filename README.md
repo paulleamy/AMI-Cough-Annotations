@@ -1,4 +1,4 @@
-Annotations of the cough events in the AMI corpus (http://groups.inf.ed.ac.uk/ami/corpus/).
+Annotations of the events labelled as cough in the AMI corpus (http://groups.inf.ed.ac.uk/ami/corpus/). List of annotations is currently being revised to include additional detail and more accurate representations of events included here.
 
 Origial paper related to this database can be found at https://ieeexplore.ieee.org/document/8904929
 
