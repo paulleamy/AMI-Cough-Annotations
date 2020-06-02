@@ -8,7 +8,7 @@ P. Leamy, D. Berry, T. Burke and D. Dorran, "Re-annotation of cough events in th
 
 @INPROCEEDINGS{8904929, author={P. {Leamy} and D. {Berry} and T. {Burke} and D. {Dorran}}, booktitle={2019 30th Irish Signals and Systems Conference (ISSC)}, title={Re-annotation of cough events in the AMI corpus}, year={2019}, volume={}, number={}, pages={1-5},}
 
-Audio files can be previewed from the follwoing link: https://paulleamy.github.io/, which can be used to playback array and headset recordings once the recordings have been unzipped.
+Audio files can be previewed from the follwoing link: https://paulleamy.github.io/, which can be used to playback array and headset recordings.
 
 Four sets of recordinga are provided here in indiviudal ZIP files:
 * ```events_array.zip``` contains table-top array microphone recordings of each event
